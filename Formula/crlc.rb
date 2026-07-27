@@ -5,21 +5,21 @@
 class Crlc < Formula
   desc "CRL (CONTRL Rule Language) toolchain: lint, compile, fmt, eval, graph"
   homepage "https://gitlab.com/contrl-group/crl"
-  version "0.1.0-beta05"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0-beta05/downloads/crlc_darwin_amd64.tar.gz"
-      sha256 "08ccf1ddc3da43f3442f2a522275fe102479230ed431777ec6f1da3b84d32adc"
+      url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0/downloads/crlc_darwin_amd64.tar.gz"
+      sha256 "3f0392f471ace9c71e8e0646293d774b818a0477348d36ff20326cfa1509833c"
 
       def install
         bin.install "crlc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0-beta05/downloads/crlc_darwin_arm64.tar.gz"
-      sha256 "fd158bade733e29a255b59db79e4bc4320d864c7a9aec3d8ba58cb0e50422eff"
+      url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0/downloads/crlc_darwin_arm64.tar.gz"
+      sha256 "c9d5c60518b19981eef91446c86607dbbd8bd9a9d61192b63a95e8a02af9ae16"
 
       def install
         bin.install "crlc"
@@ -30,8 +30,8 @@ class Crlc < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0-beta05/downloads/crlc_linux_amd64.tar.gz"
-        sha256 "5462bcee7b570ee31c299e0e90d110874408fde90e3f310c49a29a401dec816d"
+        url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0/downloads/crlc_linux_amd64.tar.gz"
+        sha256 "43b21a1c4f4f91c6a280ca144e9e0dc6463c34d953a5ec783ac909f75117a598"
 
         def install
           bin.install "crlc"
@@ -40,8 +40,8 @@ class Crlc < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0-beta05/downloads/crlc_linux_arm64.tar.gz"
-        sha256 "4222b0189188946eaf3c8e9e9f8f133907cf02687ad7ec090f4240980fdb8e1d"
+        url "https://gitlab.com/contrl-group/crl/-/releases/0.1.0/downloads/crlc_linux_arm64.tar.gz"
+        sha256 "0d1a2a4c0c91ce4b89fd9dfe07d9fb5de201b2e73ee4994a0734bc0067c2063f"
 
         def install
           bin.install "crlc"
