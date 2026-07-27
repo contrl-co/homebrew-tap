@@ -12,4 +12,10 @@ Homebrew formulae for CONTRL command-line tools.
 
 ```sh
 brew tap contrl-group/tap https://gitlab.com/contrl-group/homebrew-tap.git
+brew trust contrl-group/tap
+```
+
+## Installing CRL
+```sh
+brew install crlc
 ```
